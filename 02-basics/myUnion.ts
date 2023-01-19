@@ -33,5 +33,6 @@ const data: (number | string | boolean)[] = [1,2,3,4,'3', true]
 // allow only some values to a variable
 let seatPosition: "aisle" | "middle" | "window"
 seatPosition = 'back' // error because back is not allowed
+seatPosition = 'middle' // error because back is not allowed
 
 export {}
