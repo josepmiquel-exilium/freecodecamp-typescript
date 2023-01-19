@@ -27,6 +27,10 @@ class User {
     private deleteToken() {
         console.log("Token deleted")
     }
+}
+
+// when we extends a class, the methods and instances that are private are not inherited
+class SubUser extends User {
 
 }
 
