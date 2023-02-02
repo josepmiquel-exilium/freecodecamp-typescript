@@ -31,9 +31,12 @@ class User {
 
 // when we extends a class, the methods and instances that are private are not inherited
 class SubUser extends User {
-
+    isFamily: boolean = true
+    changeCourseCount() {
+        this._courseCount = 42 // error because is private in User and is not inherited
+    }
 }
-
+2
 const josep = new User('josepmiquel@exilium,cat', 'Josep')
 
 josep.city = 'Anvers' // error bc is readonly
